@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Tab & Bar - Antigravity Index Hub",
+  "version": "1.0.0",
+  "description": "Instant tab and bookmark bar access to all 42 Antigravity project index files with live category filtering.",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Antigravity Projects Hub"
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "permissions": [
+    "sidePanel"
+  ]
+}

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrome Tab & Bar - Antigravity Index Hub</title>
+  <link rel="stylesheet" href="high-gloss-lacquer.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cosmic Background Canvas -->
+  <canvas id="cosmic-canvas"></canvas>
+
+  <div class="app-shell">
+    <!-- Global Top Command Bar -->
+    <header class="top-bar">
+      <div class="brand-section">
+        <div class="brand-icon">
+          <!-- Clean Dual-Tone Chrome / Browser SVG -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <circle cx="12" cy="12" r="4"></circle>
+            <line x1="21.17" y1="8" x2="12" y2="8"></line>
+            <line x1="3.95" y1="6.06" x2="8.54" y2="14"></line>
+            <line x1="10.88" y1="21.94" x2="15.46" y2="14"></line>
+          </svg>
+        </div>
+        <div class="brand-title-wrap">
+          <h1>Chrome Tab &amp; Bar Hub</h1>
+          <div class="brand-subtitle">Antigravity Multi-Project Index Registry</div>
+        </div>
+      </div>
+
+      <!-- Real-Time Search & Command Bar -->
+      <div class="search-command-wrap">
+        <div class="search-input-box">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="project-search" placeholder="Search 42 index files, tech stacks, or categories..." autocomplete="off">
+          <span class="kbd-shortcut">Ctrl+K</span>
+        </div>
+      </div>
+
+      <!-- Header Status & Actions -->
+      <div class="top-bar-actions">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          <span id="active-count-label">42 Index Files Ready</span>
+        </div>
+        <button class="action-btn btn-primary" id="btn-sync-bookmarks">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <span>Sync Bookmarks</span>
+        </button>
+        <button class="action-btn" id="btn-fullscreen-toggle" title="Toggle Fullscreen">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Chrome Bookmarks Bar Integration Bar -->
+    <nav class="chrome-bookmarks-bar" id="bookmarks-bar">
+      <div class="bookmarks-bar-label">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+        </svg>
+        Bookmarks Bar:
+      </div>
+      <!-- Folder Dropdown Trigger -->
+      <button class="bookmark-item bookmark-folder-trigger" id="bookmark-folder-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+        </svg>
+        <span>Antigravity Index Files</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+
+      <!-- Quick Hub Links on Bar -->
+      <a class="bookmark-item" href="file:///G:/My%20Drive/Antigravity/Projects/index%20folder/index.html" target="_blank">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#bc8cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+          <path d="M2 12h20"></path>
+        </svg>
+        <span>Projects Index Hub</span>
+      </a>
+
+      <a class="bookmark-item" href="file:///G:/My%20Drive/Antigravity/Projects/index%20folder/3d-gallery-studio.html" target="_blank">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#f0883e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+        </svg>
+        <span>3D Art Gallery</span>
+      </a>
+
+      <a class="bookmark-item" href="file:///G:/My%20Drive/Antigravity/Projects/Choogle/index.html" target="_blank">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#56d364" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <span>Choogle</span>
+      </a>
+    </nav>
+
+    <!-- Main Workspace Layout -->
+    <div class="main-layout">
+      <!-- Left Collapsible Sidebar -->
+      <aside class="nav-sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <span class="sidebar-heading">Project Wings</span>
+          <button class="sidebar-toggle-btn" id="sidebar-toggle" title="Collapse Sidebar">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="9" y1="3" x2="9" y2="21"></line>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="sidebar-categories-list" id="category-nav-list">
+          <li class="category-nav-item active" data-category="all">
+            <div class="cat-item-left">
+              <span class="cat-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#58a6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </span>
+              <span class="cat-item-name">All Projects</span>
+            </div>
+            <span class="cat-counter-badge" id="badge-all">42</span>
+          </li>
+
+          <li class="category-nav-item" data-category="Cybersecurity & IT">
+            <div class="cat-item-left">
+              <span class="cat-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ff7b72" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </span>
+              <span class="cat-item-name">Cybersecurity &amp; IT</span>
+            </div>
+            <span class="cat-counter-badge">8</span>
+          </li>
+
+          <li class="category-nav-item" data-category="Games & Simulation">
+            <div class="cat-item-left">
+              <span class="cat-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d2a8ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                  <line x1="6" y1="12" x2="10" y2="12"></line>
+                  <line x1="8" y1="10" x2="8" y2="14"></line>
+                  <circle cx="16" cy="10" r="1"></circle>
+                  <circle cx="18" cy="12" r="1"></circle>
+                </svg>
+              </span>
+              <span class="cat-item-name">Games &amp; Simulation</span>
+            </div>
+            <span class="cat-counter-badge">10</span>
+          </li>
+
+          <li class="category-nav-item" data-category="AI & Agent Systems">
+            <div class="cat-item-left">
+              <span class="cat-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#79c0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                </svg>
+              </span>
+              <span class="cat-item-name">AI &amp; Agent Systems</span>
+            </div>
+            <span class="cat-counter-badge">7</span>
+          </li>
+
+          <li class="category-nav-item" data-category="Web Apps & Media">
+            <div class="cat-item-left">
+              <span class="cat-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#56d364" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </span>
+              <span class="cat-item-name">Web Apps &amp; Media</span>
+            </div>
+            <span class="cat-counter-badge">8</span>
+          </li>
+
+          <li class="category-nav-item" data-category="Productivity & Finance">
+            <div class="cat-item-left">
+              <span class="cat-item-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e3b341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+              </span>
+              <span class="cat-item-name">Productivity &amp; Finance</span>
+            </div>
+            <span class="cat-counter-badge">9</span>
+          </li>
+        </ul>
+
+        <div class="sidebar-footer">
+          <div class="mcp-telemetry-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3fb950" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 14 14"></polyline>
+            </svg>
+            <span>MCP Baseline Active</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Center Cards Explorer Area -->
+      <main class="content-area">
+        <!-- Interactive Category Tabs Bar -->
+        <div class="category-tabs-bar">
+          <div class="tabs-group" id="tabs-group">
+            <button class="tab-btn active" data-category="all">
+              <span>All Projects</span>
+              <span class="tab-counter">42</span>
+            </button>
+            <button class="tab-btn" data-category="Cybersecurity & IT">
+              <span>Cybersecurity &amp; IT</span>
+              <span class="tab-counter">8</span>
+            </button>
+            <button class="tab-btn" data-category="Games & Simulation">
+              <span>Games &amp; Simulation</span>
+              <span class="tab-counter">10</span>
+            </button>
+            <button class="tab-btn" data-category="AI & Agent Systems">
+              <span>AI &amp; Agents</span>
+              <span class="tab-counter">7</span>
+            </button>
+            <button class="tab-btn" data-category="Web Apps & Media">
+              <span>Web &amp; Media</span>
+              <span class="tab-counter">8</span>
+            </button>
+            <button class="tab-btn" data-category="Productivity & Finance">
+              <span>Productivity</span>
+              <span class="tab-counter">9</span>
+            </button>
+          </div>
+
+          <div class="view-controls">
+            <span class="results-count-text" id="results-count">Showing 42 of 42</span>
+          </div>
+        </div>
+
+        <!-- Scrollable Cards Grid -->
+        <div class="cards-scroll-container">
+          <div class="projects-grid" id="projects-grid">
+            <!-- Cards populated dynamically via app.js -->
+          </div>
+        </div>
+      </main>
+
+      <!-- Right Dockable Inspector Panel -->
+      <aside class="inspector-panel" id="inspector-panel">
+        <div class="inspector-header">
+          <span class="inspector-title">Index Inspector</span>
+          <div class="inspector-status" id="inspector-status">
+            <span class="type-badge" id="detail-type-badge">HTML / JS</span>
+          </div>
+        </div>
+
+        <div class="inspector-body" id="inspector-body">
+          <div class="detail-section">
+            <h2 class="detail-hero-title" id="detail-name">Select an Index File</h2>
+            <p class="detail-desc-text" id="detail-desc">Click any project card from the grid to inspect its path, stack, and launch parameters.</p>
+          </div>
+
+          <div class="detail-section">
+            <div class="detail-section-title">Exact Local Path</div>
+            <div class="detail-path-box" id="detail-path">G:\My Drive\Antigravity\Projects\...</div>
+          </div>
+
+          <div class="detail-section">
+            <div class="detail-section-title">Chrome File URL</div>
+            <div class="detail-path-box" id="detail-url">file:///G:/My%20Drive/...</div>
+          </div>
+
+          <div class="detail-section">
+            <div class="detail-section-title">Tech Stack &amp; Architecture</div>
+            <div class="card-stack-row" id="detail-stack">
+              <span class="stack-tag">HTML5</span>
+              <span class="stack-tag">CSS3</span>
+            </div>
+          </div>
+
+          <div class="detail-section detail-actions-col">
+            <a class="inspector-launch-btn" id="inspector-open-link" href="#" target="_blank">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              <span>Launch in Chrome Tab</span>
+            </a>
+            <button class="inspector-sec-btn" id="btn-copy-url">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span id="copy-url-label">Copy file:/// URL</span>
+            </button>
+            <button class="inspector-sec-btn" id="btn-copy-path">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <span id="copy-path-label">Copy Local Disk Path</span>
+            </button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Chrome Bookmarks Bar Sync Modal -->
+  <div class="modal-overlay" id="sync-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title">Sync Index Folder to Chrome Bookmarks Bar</div>
+        <button class="modal-close-btn" id="modal-close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="color: var(--color-fg-muted); margin-bottom: 16px;">
+          You can display all 42 project index files directly in your Google Chrome Bookmarks Bar using either of these two instant methods:
+        </p>
+
+        <div class="modal-step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <strong>Method A: 2-Click Native Import (Zero Browser Restart)</strong>
+            <p style="color: var(--color-fg-muted); font-size: 12px; margin-top: 4px;">
+              Open Chrome Bookmarks (<code style="color: #79c0ff;">chrome://bookmarks</code>), click the <strong>3 vertical dots</strong> in the upper right, choose <strong>Import bookmarks</strong>, and select the generated file below:
+            </p>
+            <div class="code-box">
+              <span>G:\My Drive\Antigravity\Projects\chrome tab and bar\Antigravity_Index_Bookmarks.html</span>
+              <button class="action-btn" id="btn-copy-html-path" style="padding: 2px 8px; font-size: 11px;">Copy</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <strong>Method B: Direct PowerShell Automation Injector</strong>
+            <p style="color: var(--color-fg-muted); font-size: 12px; margin-top: 4px;">
+              Directly injects the folder hierarchy into Chrome's profile JSON. Safe with timestamped backups:
+            </p>
+            <div class="code-box">
+              <span>powershell -ExecutionPolicy Bypass -File "G:\My Drive\Antigravity\Projects\chrome tab and bar\Install-ChromeBookmarks.ps1"</span>
+              <button class="action-btn" id="btn-copy-ps-cmd" style="padding: 2px 8px; font-size: 11px;">Copy</button>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 20px; display: flex; justify-content: flex-end; gap: 10px;">
+          <a class="action-btn btn-primary" href="Antigravity_Index_Bookmarks.html" download="Antigravity_Index_Bookmarks.html">
+            Download Bookmarks File
+          </a>
+          <button class="action-btn" id="modal-dismiss-btn">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="projects-data.js"></script>
+  <script src="cosmic-background.js"></script>
+  <script src="high-gloss-lacquer.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
